@@ -5,6 +5,18 @@ module.exports = {
     entry: {
         main: "./src/index.js",
     },
+    resolve: {
+        alias: {
+            '@': path.join(__dirname, '../src')
+        },
+        extensions: [".js"]
+    },
+    //Code Splitting(代码分割)
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    },
     module: {
         rules: [
             {
@@ -22,10 +34,4 @@ module.exports = {
             template: './index.html',
         }),
     ],
-    //Code Splitting(代码分割)
-    optimization: {
-        splitChunks: {
-            chunks: "all"
-        }
-    }
 }

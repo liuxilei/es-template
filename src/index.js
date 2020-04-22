@@ -1,7 +1,5 @@
-import "@babel/polyfill";
-
 const testPromise = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         setTimeout(() => {
             resolve("Hello world");
         });

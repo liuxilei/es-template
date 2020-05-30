@@ -20,6 +20,12 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.ico$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: ["babel-loader", "eslint-loader"]

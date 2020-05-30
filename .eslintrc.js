@@ -14,5 +14,10 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "no-unused-vars": 1,
+        "no-prototype-builtins": 1,
+        "no-extra-semi": 1,
+        "no-extra-boolean-cast": 1,
+        "require-yield": 1
     }
 };
